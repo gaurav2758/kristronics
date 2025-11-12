@@ -34,15 +34,37 @@
   </nav>
 
   <!-- Hero -->
-  <section class="hero">
+<section class="hero-slider">
+  <div class="slide active" style="background-image: linear-gradient(rgba(0,119,181,0.85), rgba(0,45,68,0.85)), url('./assets/images/vande_bharat_train.jpg');">
     <h1 data-aos="fade-up" data-aos-duration="1200">Empowering Transport with Intelligent Display Systems</h1>
     <p data-aos="fade-up" data-aos-delay="300">Kristronics designs and develops advanced electronic display solutions for automotive and rail industries — driving innovation, reliability, and smart communication worldwide.</p>
     <a href="#solutions" class="btn-main" data-aos="fade-up" data-aos-delay="500">Explore Solutions</a>
-    <div class="scroll-indicator">
-      <span>Scroll Down</span>
-      <i class="fas fa-chevron-down"></i>
-    </div>
-  </section>
+  </div>
+
+  <div class="slide" style="background-image: linear-gradient(rgba(0,119,181,0.85), rgba(0,45,68,0.85)), url('./assets/images/world-cities-day-2025-sml.jpg');">
+    <h1>Advanced LED Displays for Smart Buses</h1>
+    <p>Delivering next-gen passenger information systems for modern public transport infrastructure.</p>
+    <a href="#solutions" class="btn-main">Discover More</a>
+  </div>
+
+  <div class="slide" style="background-image: linear-gradient(rgba(0,119,181,0.85), rgba(0,45,68,0.85)), url('./assets/images/bus_main.webp');">
+    <h1>Reliable Rail Display Technology</h1>
+    <p>Ensuring seamless communication and safety through durable, intelligent display systems.</p>
+    <a href="#solutions" class="btn-main">Learn More</a>
+  </div>
+
+  <!-- Slider Arrows -->
+  <div class="slider-arrows">
+    <span class="arrow prev"><i class="fas fa-chevron-left"></i></span>
+    <span class="arrow next"><i class="fas fa-chevron-right"></i></span>
+  </div>
+
+  <div class="scroll-indicator">
+    <span>Scroll Down</span>
+    <i class="fas fa-chevron-down"></i>
+  </div>
+</section>
+
 
   <!-- Solutions -->
   <section id="solutions" class="py-5 bg-light">
@@ -232,18 +254,46 @@
     </div>
   </div>
 </footer>
+ <script>
+  const slides = document.querySelectorAll('.hero-slider .slide');
+  const next = document.querySelector('.arrow.next');
+  const prev = document.querySelector('.arrow.prev');
+  let current = 0;
 
+  function showSlide(index) {
+    slides.forEach((slide, i) => slide.classList.toggle('active', i === index));
+  }
+
+  function nextSlide() {
+    current = (current + 1) % slides.length;
+    showSlide(current);
+  }
+
+  function prevSlideFunc() {
+    current = (current - 1 + slides.length) % slides.length;
+    showSlide(current);
+  }
+
+  next.addEventListener('click', nextSlide);
+  prev.addEventListener('click', prevSlideFunc);
+
+  // Auto-slide every 6 seconds
+  setInterval(nextSlide, 6000);
+</script>
 <!-- Bootstrap Icons -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <script>
     AOS.init({
       duration: 1000,
       once: true
     });
   </script>
+ 
+
 </body>
 </html>
