@@ -1,0 +1,61 @@
+ .hero-section {
+      position: relative;
+      background: linear-gradient(rgba(0, 119, 181, 0.85), rgba(0, 45, 68, 0.85)),
+        url('../images/vande_bharat_train.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      min-height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0 20px;
+    }
+
+    .hero-section h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    .section-title h2 {
+      font-weight: 700;
+      color: #1a3c6e;
+    }
+
+    .feature-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 25px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+      transition: 0.3s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-main {
+      background: #1a3c6e;
+      color: #fff;
+      padding: 10px 25px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .btn-main:hover {
+      background: #102848;
+      color: #fff;
+    }
+
+    footer {
+      background: #0e1f3f;
+      color: #fff;
+      padding: 50px 0 20px;
+    }
+
+    footer a {
+      color: #c9d6ec;
+      text-decoration: none;
+    }
