@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Kristronics</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/main.css">   
+
+    <style>
+        body {
+            background-color: #f5f7fa;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .contact-header {
+            background: url('./assets/images/vande_bharat_train.jpg') center/cover no-repeat;
+            padding: 300px 0;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .contact-header::after {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.55);
+        }
+
+        .contact-header h1 {
+            position: relative;
+            z-index: 2;
+            font-size: 48px;
+            font-weight: 700;
+        }
+
+        .info-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+            height: 100%;
+            transition: .3s;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .info-icon {
+            font-size: 36px;
+            margin-bottom: 15px;
+            color: #0d6efd;
+        }
+
+        .map-container iframe {
+            border: 0;
+            width: 100%;
+            height: 350px;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+
+       <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a  href="#"></a>
+      <img class="navbar-brand" src="./assets/logos/Kristronics_logo_updated.png" alt="">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span><i class="fas fa-bars" style="color:#0077b5;"></i></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="./automative.html">Automotive Industry</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Rail Transport</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Solutions</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- Header Section -->
+    <section class="contact-header d-flex align-items-center justify-content-center">
+        <h1 data-aos="fade-down">Contact Us</h1>
+    </section>
+
+    <!-- Contact Info -->
+    <div class="container py-5">
+        <div class="row g-4">
+
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="info-card text-center">
+                    <div class="info-icon">
+                        <i class="bi bi-geo-alt-fill"></i>
+                    </div>
+                    <h5>Office Address</h5>
+                    <p>123 Industrial Area, Sec-74,<br>Mohali, Punjab, India</p>
+                </div>
+            </div>
+
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="info-card text-center">
+                    <div class="info-icon">
+                        <i class="bi bi-telephone-fill"></i>
+                    </div>
+                    <h5>Phone</h5>
+                    <p>+91 98765 43210<br>+91 99880 11223</p>
+                </div>
+            </div>
+
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="info-card text-center">
+                    <div class="info-icon">
+                        <i class="bi bi-envelope-fill"></i>
+                    </div>
+                    <h5>Email</h5>
+                    <p>info@company.com<br>support@company.com</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Contact Form & Map -->
+    <div class="container pb-5">
+        <div class="row g-4">
+
+            <!-- Contact Form -->
+            <div class="col-lg-6" data-aos="fade-right">
+                <div class="p-4 bg-white rounded shadow-sm">
+                    <h4 class="mb-3">Send Us a Message</h4>
+
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Your Name</label>
+                            <input type="text" class="form-control" placeholder="Enter your name">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Your Email</label>
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control" rows="5" placeholder="Write your message"></textarea>
+                        </div>
+
+                        <button class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Map -->
+            <div class="col-lg-6" data-aos="fade-left">
+                <div class="map-wrapper shadow-sm rounded overflow-hidden">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d778.8007867577517!2d77.0930198920211!3d28.937216607198483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390daf63ed6866fb%3A0x1b1203aa97cb88a8!2sKRISTRONICS%20PVT.%20Ltd!5e0!3m2!1sen!2sin!4v1762357709523!5m2!1sen!2sin"width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy"          referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-dark text-white">
+        © 2025 Kristronics | All Rights Reserved
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 900,
+            once: true
+        });
+    </script>
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap
