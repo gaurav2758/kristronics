@@ -4,7 +4,7 @@
     }
 
     body {
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Roboto', sans-serif;
       background-color: #ffffff;
       color: #333;
       scroll-behavior: smooth;
@@ -342,3 +342,4 @@
   border-color: #fff;
   transform: scale(1.1);
 }
+
