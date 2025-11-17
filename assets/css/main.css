@@ -347,4 +347,51 @@
   transform: scale(1.1);
 }
 
+/* ------------------------------
+   NAVBAR DROPDOWN – HOVER + ANIMATION
+----------------------------------- */
+
+.navbar-nav .dropdown-menu {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.25s ease-in-out;
+  border-radius: 12px;
+  padding: 10px 0;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  border: none;
+}
+
+/* Show dropdown on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
+
+/* Menu links */
+.dropdown-menu .dropdown-item {
+  padding: 10px 20px;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+/* Hover effect for items */
+.dropdown-menu .dropdown-item:hover {
+  background: #0077b5;
+  color: #fff;
+}
+
+/* Triangle indicator */
+.nav-item.dropdown > .nav-link::after {
+  content: " ▾";
+  font-size: 13px;
+  transition: 0.2s;
+}
+
+.nav-item.dropdown:hover > .nav-link::after {
+  transform: rotate(180deg);
+}
+
+
 
