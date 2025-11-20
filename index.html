@@ -4,13 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kristronics | Innovating Smart Display Solutions</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/main.css">
-
-
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ <link rel="stylesheet" href="assets/css/main.css">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 </head>
+
 <body>
 
   <!-- Navbar -->
@@ -20,7 +19,7 @@
     <img class="navbar-brand" src="./assets/logos/Kristronics_logo_updated.png" alt="">
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span><i class="fas fa-bars" style="color:#0077b5;"></i></span>
+      <span><i class="bi bi-list" style="color:#0077b5;"></i></span>
     </button>
 
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -70,8 +69,8 @@
 
   <!-- Slider Arrows -->
   <div class="slider-arrows">
-    <span class="arrow prev"><i class="fas fa-chevron-left"></i></span>
-    <span class="arrow next"><i class="fas fa-chevron-right"></i></span>
+    <span class="arrow prev"><i class="bi bi-chevron-left"></i></span>
+    <span class="arrow next"><i class="bi bi-chevron-right"></i></span>
   </div>
 
   <div class="scroll-indicator">
@@ -79,6 +78,21 @@
     <i class="fas fa-chevron-down"></i>
   </div>
 </section>
+
+<!-- about us section -->
+  <section id="about-us" class="py-5">
+    <div class="container">
+      <div class="about" data-aos="fade-up">
+        <h2>About Kristronics</h2>
+        <p>
+          Kristronics Pvt Limited is an ISO 9001:2015 certified MSME registered with NSIC, GEM, DPIIT Recognized STARTUP Company by Ministry of Commerce & Industry Government of India having its R&D and Manufacturing setup at RAI Industrial Area ,Sonipat, Haryana. With our latest Designs and Technology we are providing Various Solutions to Railways, Automotive and other Industries Like Passenger Information and Infotainment System for TRAINS,   Intelligent Transport management System (ITMS), Integrated Passenger Information System (IPIS) for Stations, LED Display System for BUS / Automotive Application, CCTV System for Trains and Buses,   LED Displays and Video Walls (True Color Displays) for Railway Stations, LED Based Coach Lights for Trains, Indoor & Outdoor Video walls for Advertisement & Information.
+        </p>
+      </div>
+      <div class="about-image mt-4" data-aos="fade-up" data-aos-delay="200">
+      <img class="img-fluid rounded" src="./assets/images/Station_displaying_unit_inside.jpeg" alt="">
+      </div>
+    </div>
+  </section>
 
 
   <!-- Solutions -->
@@ -120,6 +134,29 @@
     </div>
   </section>
 
+<div class="logo-slider my-5">
+  <div class="fade-left"></div>
+  <div class="fade-right"></div>
+
+  <div class="logo-track p-3" id="logoTrack">
+
+    <!-- ONLY WRITE ONCE: YOUR LOGOS -->
+    <img src="./assets/logos/ISO9001.jpg" class="cert-logo" alt="ISO 9001">
+    <img src="./assets/logos/gem-logo.png" class="cert-logo" alt="GeM">
+    <img src="./assets/logos/MSME_logo.png" class="cert-logo" alt="MSME">
+    <img src="./assets/logos/NSIC.jpg" class="cert-logo" alt="NSIC">
+    <img src="./assets/logos/indian_railway.png" class="cert-logo" alt="Indian Railway">
+    <img src="./assets/logos/RDSO_img.png" class="cert-logo" alt="RDSO">
+    <img src="./assets/logos/make-in-india-img-768x462.png" class="cert-logo" alt="Make in India">
+    <img src="./assets/logos/mcf.jpg" class="cert-logo" alt="MCF">
+    <img src="./assets/logos/rcfkapurthala.jpg" class="cert-logo" alt="RCF Kapurthala">
+    <img src="./assets/logos/ukparivahan.jpg" class="cert-logo" alt="UK Parivahan">
+
+  </div>
+</div>
+
+
+
   <!-- Impact -->
   <section class="impact" data-aos="fade-up">
     <div class="container">
@@ -145,16 +182,7 @@
     </div>
   </section>
 
-  <!-- about us section -->
-  <section id="about-us" class="py-5">
-    <div class="container">
-      <div class="about" data-aos="fade-up">
-        <h2>About Kristronics</h2>
-        <p>Kristronics Pvt Limited is an ISO 9001:2015 certified MSME registered with NSIC, GEM, Startupindia in Department for Promotion of Industry and Internal Trade, Ministry of Commerce & Industry Government of India having its R&D and Manufacturing setup at RAI Industrial Area ,Sonipat.With our latest Designs and Technology we are providing Various Solutions to Railways, Automotive and other Industries Like Integrated Passenger Information System (IPIS) for Stations, LED Displays and Video Walls (True Color Displays) for Railway Stations, Passenger Information and Infotainment System for TRAINS, LED Display System for BUS / Automotive Application, Intelligent Transport management System (ITMS), LED Based Coach Lights for Trains, Indoor & Outdoor Video walls for Advertisement & Information, Automatic & Manual Hand Sanitizer/Soap Dispenser etc. We have in-house R&D for Designing and Development & Testing of PCB’s, Circuit, Embedded, Software & Hardware etc.</p>
-      </div>
-      <img src="" alt="">
-    </div>
-  </section>
+  
 
   <!-- Contact -->
   <section id="contact" data-aos="fade-up">
@@ -336,7 +364,11 @@
   // Re-run when window resized (mobile <-> desktop)
   window.addEventListener('resize', setupHoverDropdown);
 </script>
-
+<script>
+  const track = document.getElementById("logoTrack");
+  const clone = track.cloneNode(true);
+  track.parentNode.appendChild(clone);
+</script>
  
 
 </body>
