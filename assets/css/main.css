@@ -393,5 +393,111 @@
   transform: rotate(180deg);
 }
 
+.logo-slider {
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo-track {
+  display: flex;
+  width: calc(220px * 8); /* 8 logos total (4 real + 4 duplicate) */
+  animation: scroll 18s linear infinite;
+}
+
+/* WRAPPER */
+.logo-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 150px;
+  padding: 10px 0;
+  background: #fff;
+}
+
+/* FADE EDGES */
+.fade-left, .fade-right {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 90px;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.fade-left {
+  left: 0;
+  background: linear-gradient(to right, #fff 40%, transparent);
+}
+
+.fade-right {
+  right: 0;
+  background: linear-gradient(to left, #fff 40%, transparent);
+}
+
+/* SCROLLING TRACK */
+.logo-track {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  animation: scroll 22s linear infinite;
+}
+
+/* PAUSE ON HOVER */
+.logo-slider:hover .logo-track {
+  animation-play-state: paused;
+}
+
+/* LOGO STYLES */
+.cert-logo {
+  width: 90px;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(30%);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.cert-logo:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+/* KEYFRAME */
+@keyframes scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* RESPONSIVE (MOBILE & TABLET) */
+@media (max-width: 992px) {
+  .cert-logo {
+    width: 110px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cert-logo {
+    width: 90px;
+  }
+  .fade-left, .fade-right {
+    width: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cert-logo {
+    width: 70px;
+  }
+  .fade-left, .fade-right {
+    width: 40px;
+  }
+}
+
+
 
 
