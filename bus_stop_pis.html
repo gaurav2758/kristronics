@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bus Stop PIS | Kristronics - Intelligent Transport Systems</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- YOUR CUSTOM CSS -->
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <style>
+    /* Specific Page Header - Distinct image for Bus Stop PIS */
+    .page-header {
+      /* Using a slightly different gradient or image to distinguish from Bus PIS */
+      background: linear-gradient(rgba(0,119,181,0.9), rgba(11,26,42,0.85)), url('./assets/images/bus_main.jpg'); 
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 140px 0 80px; /* Top padding accounts for fixed navbar */
+      text-align: center;
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- =========================
+     NAVBAR (Same as Index)
+========================== -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a href="./index.html">
+      <img class="navbar-brand" src="./assets/logos/Kristronics_logo_updated.png" alt="Kristronics Logo">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span><i class="bi bi-list" style="color:#0077b5;"></i></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="./index.html#about-us">About Us</a></li>
+
+        <!-- Automotive Industry Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link active" href="#" data-bs-toggle="dropdown">Automotive Industry</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="./bus_pis.html">BUS PIS – Integrated System</a></li>
+            <li><a class="dropdown-item" href="./bus_stop_pis.html">Bus Stop PIS</a></li>
+            <li><a class="dropdown-item" href="./standalone_pis.html">Standalone SDS</a></li> <!-- NEW LINK ADDED HERE -->
+            <li><a class="dropdown-item" href="./cctv.html">CCTV Systems</a></li>
+            <li><a class="dropdown-item" href="./imts.html">IMTS – Intelligent Transport</a></li>
+          </ul>
+        </li>
+
+        <!-- Rail Transport Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" data-bs-toggle="dropdown">Rail Transport</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="./papis.html">PAPIS</a></li>
+            <li><a class="dropdown-item" href="./railway_station_pis.html">Railway Station PIS</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="./solutions.html">Solutions</a></li>
+        <li class="nav-item"><a class="nav-link" href="./contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- =========================
+     PAGE HEADER
+========================== -->
+<header class="page-header">
+    <div class="container" data-aos="fade-up">
+        <h1 class="fw-bold display-5">Bus Stop PIS</h1>
+        <p class="lead opacity-75">Next-Generation Passenger Information for Transit Hubs</p>
+    </div>
+</header>
+
+<!-- =========================
+     1. SYSTEM FUNCTIONALITY
+========================== -->
+<section class="py-5">
+    <div class="container">
+        <div class="section-title mb-5">
+            <h2>System Overview</h2>
+        </div>
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6" data-aos="fade-right">
+                <h3 class="h4 text-primary mb-3">Real-Time Connectivity</h3>
+                <p class="lead fs-6">
+                    Station PIS receives real-time information of a bus from the backend server and displays the Bus route number, ETA, and other critical updates.
+                </p>
+                <p>
+                    The system acts as a communication bridge between the central command center and waiting passengers, ensuring transparency and reducing wait-time anxiety.
+                </p>
+                
+                <ul class="list-unstyled mt-4">
+                    <li class="d-flex mb-3">
+                        <i class="bi bi-broadcast text-primary me-3 fs-4"></i>
+                        <div>
+                            <strong>Wireless/GPRS Integration</strong>
+                            <p class="small text-muted mb-0">Seamless data transmission between the Bus, Server, and Station Display.</p>
+                        </div>
+                    </li>
+                    <li class="d-flex mb-3">
+                        <i class="bi bi-display text-primary me-3 fs-4"></i>
+                        <div>
+                            <strong>Visual & Audio Updates</strong>
+                            <p class="small text-muted mb-0">Clear LED visuals combined with audio announcements for accessibility.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="col-lg-6 text-center" data-aos="fade-left">
+                <!-- DIAGRAM PLACEHOLDER based on your uploaded image -->
+                <img src="./assets/images/bus_Station_PIS.jpeg" class="img-fluid rounded shadow-sm border" alt="Station PIS Diagram">
+                <p class="text-muted small mt-2 fst-italic">Figure: Connectivity between Server, Bus, and Station PIS</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =========================
+     2. DESIGNED FOR INDIAN CONDITIONS
+========================== -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center g-5 flex-lg-row-reverse">
+            <div class="col-lg-6" data-aos="fade-left">
+                <div class="section-title">
+                    <h2>Engineered for Indian Conditions</h2>
+                </div>
+                
+                <p>
+                    The diverse, humid, temperature change, dusty environment and bumpy roads are the major challenges of the Indian Information System. 
+                </p>
+                <p>
+                    <strong>KPL Display Systems</strong> are specifically designed to sustain these environmental & regulatory Indian conditions. We provide real-time & accurate Audio & Visual Information to Passengers Onboard and on Bus Stops, integrating this information for efficient fleet management.
+                </p>
+
+                <div class="row mt-4">
+                    <div class="col-6 mb-3">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-thermometer-sun text-warning fs-3 me-2"></i>
+                            <span class="fw-bold">Temperature Resistant</span>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-wind text-secondary fs-3 me-2"></i>
+                            <span class="fw-bold">Dust Proof (IP65/66)</span>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-moisture text-info fs-3 me-2"></i>
+                            <span class="fw-bold">Humidity Protection</span>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-shield-check text-success fs-3 me-2"></i>
+                            <span class="fw-bold">Rugged Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6" data-aos="fade-right">
+                <!-- STATION IMAGE PLACEHOLDER -->
+                <img src="https://placehold.co/600x350?text=Bus+Stop+LED+Display+Installation" class="img-fluid rounded shadow" alt="Bus Stop LED Display">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =========================
+     3. KEY CERTIFICATIONS (From Header of Image)
+========================== -->
+<section class="py-5">
+    <div class="container text-center">
+        <h4 class="mb-4 text-secondary">Trusted & Certified Technology</h4>
+        <div class="row justify-content-center gap-4 align-items-center grayscale-logos">
+            <div class="col-auto">
+                <div class="p-3 border rounded shadow-sm d-inline-block">
+                    <strong class="d-block text-primary">ISO CERTIFIED</strong>
+                    <span class="small text-muted">9001:2015</span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="p-3 border rounded shadow-sm d-inline-block">
+                    <strong class="d-block text-warning">#startupindia</strong>
+                    <span class="small text-muted">DPIIT Recognized</span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="p-3 border rounded shadow-sm d-inline-block">
+                    <strong class="d-block text-success">KPL</strong>
+                    <span class="small text-muted">Kristronics Pvt. Ltd.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =========================
+     FOOTER (Identical to Index)
+========================== -->
+<footer class="text-white pt-5 pb-0" style="background: linear-gradient(135deg, #0077b5, #005f8d);">
+  <div class="container">
+    <div class="row gy-4">
+      <!-- About -->
+      <div class="col-lg-4 col-md-6">
+        <h5 class="fw-bold mb-3">Kristronics</h5>
+        <p class="text-light opacity-75">
+          Empowering smart mobility through cutting-edge electronic and digital solutions for automotive and rail transport industries. 
+          We innovate to move the world forward.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-lg-2 col-md-6">
+        <h6 class="fw-semibold mb-3">Quick Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light text-decoration-none d-block mb-2">About Us</a></li>
+          <li><a href="./automative.html" class="text-light text-decoration-none d-block mb-2">Automotive Industry</a></li>
+          <li><a href="#" class="text-light text-decoration-none d-block mb-2">Rail Transport</a></li>
+          <li><a href="#" class="text-light text-decoration-none d-block mb-2">Solutions</a></li>
+          <li><a href="#" class="text-light text-decoration-none d-block">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-lg-3 col-md-6">
+        <h6 class="fw-semibold mb-3">Contact</h6>
+        <p class="mb-2"><i class="bi bi-geo-alt-fill me-2"></i> Plot No. 257 First Floor HSIIDC Industrial Estate Sonipat, Haryana-131029</p>
+        <p class="mb-2"><i class="bi bi-envelope-fill me-2"></i>kristronics.tech@gmail.com</p>
+        <p><i class="bi bi-telephone-fill me-2"></i> +91 98765 43210</p>
+      </div>
+
+      <!-- Social Media -->
+      <div class="col-lg-3 col-md-6">
+        <h6 class="fw-semibold mb-3">Follow Us</h6>
+        <div>
+          <a href="#" class="text-white fs-4 me-3"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="text-white fs-4 me-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white fs-4 me-3"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="text-white fs-4"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-light opacity-25 my-4">
+
+    <div class="pb-3">
+      <p class="mb-0 small opacity-75">© 2025 Kristronics. All Rights Reserved. | Designed with <i class="bi bi-lightning-fill text-warning"></i> by Kristronics Team</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="./assets/js/main.js"></script>
+<script>
+  AOS.init(); // Initialize Animations
+</script>
+
+</body>
+</html>

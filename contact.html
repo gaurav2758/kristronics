@@ -70,25 +70,39 @@
 </head>
 <body>
 
-       <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
-      <a  href="#"></a>
-      <img class="navbar-brand" src="./assets/logos/Kristronics_logo_updated.png" alt="">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span><i class="fas fa-bars" style="color:#0077b5;"></i></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="./automative.html">Automotive Industry</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Rail Transport</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Solutions</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
-        </ul>
-      </div>
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a href="./index.html">
+    <img class="navbar-brand" src="./assets/logos/Kristronics_logo_updated.png" alt=""></a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span><i class="bi bi-list" style="color:#0077b5;"></i></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+
+        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="./automative.html">Automotive Industry</a></li>
+
+        <!-- 🟦 Updated Hover Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" data-bs-toggle="dropdown">Rail Transport</a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="./papis_1.html">PAPIS 1.0</a></li>
+            <li><a class="dropdown-item" href="./rail_transport.html">Rail Solutions Overview</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="./solutions.html">Solutions</a></li>
+        <li class="nav-item"><a class="nav-link" href="./contact.html">Contact Us</a></li>
+
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
     <!-- Header Section -->
     <section class="contact-header d-flex align-items-center justify-content-center">

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Standalone Display System (SDS) | Kristronics</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- YOUR CUSTOM CSS -->
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <style>
+    /* Page Header - Using a Bus image to match context */
+    .page-header {
+      background: linear-gradient(rgba(0,119,181,0.9), rgba(11,26,42,0.85)), url('./assets/images/bus_main.jpg'); 
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 140px 0 80px; 
+      text-align: center;
+      margin-bottom: 0;
+    }
+    
+    /* Technical Table Styling */
+    .tech-table th {
+        background-color: #f8f9fa;
+        color: var(--main-color);
+        width: 45%;
+        font-weight: 600;
+    }
+    .tech-table tr:hover {
+        background-color: #f1f1f1;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- =========================
+     NAVBAR (Updated with New Link)
+========================== -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a href="./index.html">
+      <img class="navbar-brand" src="./assets/logos/Kristronics_logo_updated.png" alt="Kristronics Logo">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span><i class="bi bi-list" style="color:#0077b5;"></i></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="./index.html#about-us">About Us</a></li>
+
+        <!-- Automotive Industry Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link active" href="#" data-bs-toggle="dropdown">Automotive Industry</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="./bus_pis.html">BUS PIS – Integrated System</a></li>
+            <li><a class="dropdown-item" href="./bus_stop_pis.html">Bus Stop PIS</a></li>
+            <li><a class="dropdown-item" href="./standalone_pis.html">Standalone SDS</a></li> <!-- NEW LINK ADDED HERE -->
+            <li><a class="dropdown-item" href="./cctv.html">CCTV Systems</a></li>
+            <li><a class="dropdown-item" href="./imts.html">IMTS – Intelligent Transport</a></li>
+          </ul>
+        </li>
+
+        <!-- Rail Transport Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" data-bs-toggle="dropdown">Rail Transport</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="./papis.html">PAPIS</a></li>
+            <li><a class="dropdown-item" href="./railway_station_pis.html">Railway Station PIS</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="./solutions.html">Solutions</a></li>
+        <li class="nav-item"><a class="nav-link" href="./contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- =========================
+     PAGE HEADER
+========================== -->
+<header class="page-header">
+    <div class="container" data-aos="fade-up">
+        <h1 class="fw-bold display-5">Standalone Display System (SDS)</h1>
+        <p class="lead opacity-75">High-Brightness LED Destination Displays with Inbuilt Controller</p>
+    </div>
+</header>
+
+<!-- =========================
+     1. PRODUCT OVERVIEW
+========================== -->
+<section class="py-5">
+    <div class="container">
+        <div class="section-title mb-5">
+            <h2>System Overview</h2>
+        </div>
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6" data-aos="fade-right">
+                <h3 class="h4 text-primary mb-3">Reliable & Independent Operation</h3>
+                <p class="lead fs-6 text-dark">
+                    SDS is a Stand Alone Display System with an inbuilt controller used for displaying Destination and Messages on vehicles.
+                </p>
+                <p>
+                    It is designed to be passenger-friendly with an ambient light sensor that adjusts brightness automatically. The system offers flexibility to display messages in both <strong>Still and Scrolling modes</strong>, supporting single or double-line formats.
+                </p>
+                
+                <ul class="list-unstyled mt-4">
+                    <li class="mb-2"><i class="bi bi-sun-fill text-warning me-2"></i> <strong>Day/Night Viewable:</strong> High brightness LEDs visible even in bright sunlight.</li>
+                    <li class="mb-2"><i class="bi bi-translate text-primary me-2"></i> <strong>Multi-Language:</strong> Supports regional languages for wider accessibility.</li>
+                    <li class="mb-2"><i class="bi bi-shield-check text-success me-2"></i> <strong>Indian Environment Ready:</strong> Louver design makes it reliable for dust and heat.</li>
+                </ul>
+            </div>
+            
+            <div class="col-lg-6 text-center" data-aos="fade-left">
+                <!-- Placeholder for the Yellow Bus image from brochure -->
+                <img src="https://placehold.co/600x400?text=Bus+with+Orange+LED+Display" class="img-fluid rounded shadow" alt="Bus with SDS">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =========================
+     2. KEY FEATURES GRID
+========================== -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="section-title text-center mb-5" data-aos="fade-up">
+            <h2>Key Features & Benefits</h2>
+        </div>
+
+        <div class="row g-4">
+            <!-- Feature 1 -->
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                <div class="card h-100 border-0 shadow-sm text-center p-4">
+                    <div class="mb-3 text-primary fs-1"><i class="bi bi-wrench-adjustable-circle"></i></div>
+                    <h5 class="fw-bold">No Maintenance</h5>
+                    <p class="small text-muted mb-0">Fully electronic with no moving parts. LEDs feature built-in UV protection to maintain color intensity over the bus's lifetime.</p>
+                </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                <div class="card h-100 border-0 shadow-sm text-center p-4">
+                    <div class="mb-3 text-primary fs-1"><i class="bi bi-keyboard"></i></div>
+                    <h5 class="fw-bold">Convenient to Use</h5>
+                    <p class="small text-muted mb-0">Menu-based operation via a 4x4 Keypad with a bright LCD. Includes password protection and USB data updates.</p>
+                </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                <div class="card h-100 border-0 shadow-sm text-center p-4">
+                    <div class="mb-3 text-primary fs-1"><i class="bi bi-tools"></i></div>
+                    <h5 class="fw-bold">Easy Installation</h5>
+                    <p class="small text-muted mb-0">Lightweight MS/Aluminum construction with thin depth. Comes with built-in fixing points and flexible connectors.</p>
+                </div>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                <div class="card h-100 border-0 shadow-sm text-center p-4">
+                    <div class="mb-3 text-primary fs-1"><i class="bi bi-eye"></i></div>
+                    <h5 class="fw-bold">Optimal Legibility</h5>
+                    <p class="small text-muted mb-0">Wide viewing angle with high resolution allows for longer text lines, better fonts, and optimal text design.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =========================
+     3. TECH SPECS & HARDWARE
+========================== -->
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <!-- Hardware Images -->
+            <div class="col-lg-5" data-aos="fade-right">
+                <div class="mb-4">
+                    <h5 class="fw-bold text-secondary mb-3">Front Display Unit</h5>
+                    <!-- Placeholder for LED Board Image -->
+                    <img src="https://placehold.co/500x150?text=Orange+LED+Route+Display" class="img-fluid rounded shadow-sm border" alt="Front LED Display">
+                </div>
+                <div>
+                    <h5 class="fw-bold text-secondary mb-3">Driver Console Unit</h5>
+                    <!-- Placeholder for Keypad Image -->
+                    <img src="https://placehold.co/500x200?text=Driver+Keypad+Controller" class="img-fluid rounded shadow-sm border" alt="Driver Console">
+                </div>
+            </div>
+
+            <!-- Technical Specification Table -->
+            <div class="col-lg-7" data-aos="fade-left">
+                <h3 class="mb-4 text-primary">Technical Specifications</h3>
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body p-0">
+                        <table class="table table-bordered tech-table mb-0">
+                            <tbody>
+                                <tr>
+                                    <th>Display Area</th>
+                                    <td>960 x 215 mm</td>
+                                </tr>
+                                <tr>
+                                    <th>Operating Voltage</th>
+                                    <td>10-32 Volts DC (Nominal)</td>
+                                </tr>
+                                <tr>
+                                    <th>Communication</th>
+                                    <td>RS 485 Standard</td>
+                                </tr>
+                                <tr>
+                                    <th>Character Height</th>
+                                    <td>205 mm</td>
+                                </tr>
+                                <tr>
+                                    <th>LED Pitch</th>
+                                    <td>13.4mm x 10mm (Vertical x Horizontal)</td>
+                                </tr>
+                                <tr>
+                                    <th>Matrix Resolution</th>
+                                    <td>96 x 16 (Other options available)</td>
+                                </tr>
+                                <tr>
+                                    <th>Operating Temp</th>
+                                    <td>-10°C to +70°C</td>
+                                </tr>
+                                <tr>
+                                    <th>Humidity</th>
+                                    <td>95% non-condensed</td>
+                                </tr>
+                                <tr>
+                                    <th>Shock & Vibration</th>
+                                    <td>5-55 Hz & maximum upto 10g</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <p class="fw-bold mb-1">Compliance:</p>
+                    <span class="badge bg-secondary me-2">Bus Body Code</span>
+                    <span class="badge bg-secondary me-2">Automotive Standards</span>
+                    <span class="badge bg-secondary">Vibration & Shock Proof</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =========================
+     FOOTER
+========================== -->
+<footer class="text-white pt-5 pb-0" style="background: linear-gradient(135deg, #0077b5, #005f8d);">
+  <div class="container">
+    <div class="row gy-4">
+      <!-- About -->
+      <div class="col-lg-4 col-md-6">
+        <h5 class="fw-bold mb-3">Kristronics</h5>
+        <p class="text-light opacity-75">
+          Empowering smart mobility through cutting-edge electronic and digital solutions for automotive and rail transport industries. 
+          We innovate to move the world forward.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-lg-2 col-md-6">
+        <h6 class="fw-semibold mb-3">Quick Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light text-decoration-none d-block mb-2">About Us</a></li>
+          <li><a href="./automative.html" class="text-light text-decoration-none d-block mb-2">Automotive Industry</a></li>
+          <li><a href="#" class="text-light text-decoration-none d-block mb-2">Rail Transport</a></li>
+          <li><a href="#" class="text-light text-decoration-none d-block mb-2">Solutions</a></li>
+          <li><a href="#" class="text-light text-decoration-none d-block">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-lg-3 col-md-6">
+        <h6 class="fw-semibold mb-3">Contact</h6>
+        <p class="mb-2"><i class="bi bi-geo-alt-fill me-2"></i> Plot No. 257 First Floor HSIIDC Industrial Estate Sonipat, Haryana-131029</p>
+        <p class="mb-2"><i class="bi bi-envelope-fill me-2"></i>kristronics.tech@gmail.com</p>
+        <p><i class="bi bi-telephone-fill me-2"></i> +91 98765 43210</p>
+      </div>
+
+      <!-- Social Media -->
+      <div class="col-lg-3 col-md-6">
+        <h6 class="fw-semibold mb-3">Follow Us</h6>
+        <div>
+          <a href="#" class="text-white fs-4 me-3"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="text-white fs-4 me-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white fs-4 me-3"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="text-white fs-4"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-light opacity-25 my-4">
+
+    <div class="pb-3">
+      <p class="mb-0 small opacity-75">© 2025 Kristronics. All Rights Reserved. | Designed with <i class="bi bi-lightning-fill text-warning"></i> by Kristronics Team</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="./assets/js/main.js"></script>
+<script>
+  AOS.init(); // Initialize Animations
+</script>
+
+</body>
+</html>

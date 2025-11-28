@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>On Board PAPIS | Kristronics - Intelligent Transport Systems</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- YOUR CUSTOM CSS -->
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <style>
+    /* Specific Page Header - Train/Infotainment Theme */
+    .page-header {
+      /* Placeholder for a train interior or exterior shot */
+      background: linear-gradient(rgba(0,119,181,0.9), rgba(11,26,42,0.85)), url('./assets/images/vande_bharat_train.jpg'); 
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 140px 0 80px; 
+      text-align: center;
+      margin-bottom: 0;
+    }
+    
+    /* Feature Icon Styling */
+    .feature-icon-box {
+        width: 60px;
+        height: 60px;
+        background: rgba(0, 119, 181, 0.1);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+        color: var(--main-color);
+        font-size: 1.5rem;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- =========================
+     NAVBAR
+========================== -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a href="./index.html">
+      <img class="navbar-brand" src="./assets/logos/Kristronics_logo_updated.png" alt="Kristronics Logo">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span><i class="bi bi-list" style="color:#0077b5;"></i></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="./index.html#about-us">About Us</a></li>
+
+        <!-- Automotive Industry Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link active" href="#" data-bs-toggle="dropdown">Automotive Industry</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="./bus_pis.html">BUS PIS – Integrated System</a></li>
+            <li><a class="dropdown-item" href="./bus_stop_pis.html">Bus Stop PIS</a></li>
+            <li><a class="dropdown-item" href="./standalone_pis.html">Standalone SDS</a></li> <!-- NEW LINK ADDED HERE -->
+            <li><a class="dropdown-item" href="./cctv.html">CCTV Systems</a></li>
+            <li><a class="dropdown-item" href="./imts.html">IMTS – Intelligent Transport</a></li>
+          </ul>
+        </li>
+
+        <!-- Rail Transport Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" data-bs-toggle="dropdown">Rail Transport</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="./papis.html">PAPIS</a></li>
+            <li><a class="dropdown-item" href="./railway_station_pis.html">Railway Station PIS</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="./solutions.html">Solutions</a></li>
+        <li class="nav-item"><a class="nav-link" href="./contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- =========================
+     PAGE HEADER
+========================== -->
+<header class="page-header">
+    <div class="container" data-aos="fade-up">
+        <h1 class="fw-bold display-5">On Board PAPIS & Infotainment System</h1>
+        <p class="lead opacity-75">Enhancing Passenger Experience with Smart Connectivity & Safety</p>
+    </div>
+</header>
+
+<!-- =========================
+     1. SYSTEM OVERVIEW
+========================== -->
+<section class="py-5">
+    <div class="container">
+        <div class="section-title mb-5">
+            <h2>System Overview</h2>
+        </div>
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6" data-aos="fade-right">
+                <p class="lead text-dark">
+                    The <strong>KPL On Board PAPIS</strong> (Passenger Announcement & Passenger Information System) is a state-of-the-art solution integrated with Infotainment capabilities for modern trains.
+                </p>
+                <p>
+                    This GPS-based system ensures passengers are always informed about their journey status while enjoying high-speed connectivity and entertainment options. It combines visual displays, audio announcements, and safety features into a unified intelligent network.
+                </p>
+                
+                <div class="row mt-4">
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex">
+                            <div class="feature-icon-box flex-shrink-0">
+                                <i class="bi bi-geo-alt-fill"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h6 class="fw-bold">GPS Enabled</h6>
+                                <p class="small text-muted mb-0">Real-time location tracking for accurate next-stop announcements.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="d-flex">
+                            <div class="feature-icon-box flex-shrink-0">
+                                <i class="bi bi-wifi"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h6 class="fw-bold">WiFi On Board</h6>
+                                <p class="small text-muted mb-0">Seamless internet connectivity for passengers throughout the journey.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 text-center" data-aos="fade-left">
+                <!-- DIAGRAM PLACEHOLDER: Train Connectivity Diagram -->
+                <img src="https://placehold.co/600x400?text=Train+Infotainment+System+Diagram" class="img-fluid rounded shadow-sm border" alt="PAPIS System Diagram">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =========================
+     2. KEY COMPONENTS (From Image)
+========================== -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="section-title text-center mb-5" data-aos="fade-up">
+            <h2>Key System Components</h2>
+            <p>A comprehensive suite of hardware designed for the Indian Railways ecosystem.</p>
+        </div>
+
+        <div class="row g-4">
+            <!-- Component 1: Main Controller -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="card h-100 border-0 shadow-sm solution-card">
+                    <img src="https://placehold.co/400x250?text=Main+Controller+Unit" class="card-img-top p-3" alt="Main Controller">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Main Controller</h5>
+                        <p class="card-text small text-muted">
+                            The central processing unit that coordinates GPS data, audio announcements, and display outputs across the entire train. Rugged design for high vibration environments.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Component 2: Front Display -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="card h-100 border-0 shadow-sm solution-card">
+                    <img src="https://placehold.co/400x250?text=Exterior+Front+Display" class="card-img-top p-3" alt="Front Display">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Exterior Front Display</h5>
+                        <p class="card-text small text-muted">
+                            High-visibility LED boards mounted on the train exterior (Head/Tail) to display Train Number, Name, and Destination (e.g., Borivali, Mumbai).
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Component 3: On Board PIS -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="card h-100 border-0 shadow-sm solution-card">
+                    <img src="https://placehold.co/400x250?text=Interior+Coach+Displays" class="card-img-top p-3" alt="On Board PIS">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">On Board PIS</h5>
+                        <p class="card-text small text-muted">
+                            Internal LED/LCD displays located within coaches to inform passengers of the current location, next station, and safety messages.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Component 4: First AC PIS -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="card h-100 border-0 shadow-sm solution-card">
+                    <img src="https://placehold.co/400x250?text=First+AC+PIS+Board" class="card-img-top p-3" alt="First AC PIS">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">First AC PIS</h5>
+                        <p class="card-text small text-muted">
+                            Premium display units specifically designed for First AC coaches, offering enhanced aesthetics and clearer information visibility.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Component 5: Toilet Emergency Alarm -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="card h-100 border-0 shadow-sm solution-card">
+                    <img src="https://placehold.co/400x250?text=Toilet+Emergency+Button" class="card-img-top p-3" alt="Toilet Emergency Alarm">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">Toilet Emergency Alarm</h5>
+                        <p class="card-text small text-muted">
+                            Critical safety feature allowing passengers to alert the train crew from inside the washroom in case of a medical or security emergency.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Component 6: Infotainment -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                <div class="card h-100 border-0 shadow-sm solution-card">
+                    <img src="https://placehold.co/400x250?text=Passenger+Infotainment" class="card-img-top p-3" alt="Infotainment System">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Infotainment System</h5>
+                        <p class="card-text small text-muted">
+                            Delivers entertainment content, journey statistics, and internet connectivity directly to passengers' devices via the On-Board WiFi network.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =========================
+     3. KEY CERTIFICATIONS
+========================== -->
+<section class="py-5">
+    <div class="container text-center">
+        <h4 class="mb-4 text-secondary">Trusted & Certified Technology</h4>
+        <div class="row justify-content-center gap-4 align-items-center grayscale-logos">
+            <!-- Recreating the logo strip from your image -->
+            <div class="col-auto">
+                <img src="./assets/logos/MSME_logo.png" style="height: 50px;" alt="MSME">
+            </div>
+            <div class="col-auto">
+                <img src="./assets/logos/NSIC.jpg" style="height: 50px;" alt="NSIC">
+            </div>
+            <div class="col-auto">
+                <img src="./assets/logos/make-in-india-img-768x462.png" style="height: 50px;" alt="Make In India">
+            </div>
+            <div class="col-auto">
+                <img src="./assets/logos/gem-logo.png" style="height: 50px;" alt="GeM">
+            </div>
+            <div class="col-auto">
+                <img src="./assets/logos/RDSO_img.png" style="height: 50px;" alt="RDSO">
+            </div>
+            <div class="col-auto">
+                <img src="./assets/logos/indian_railway.png" style="height: 50px;" alt="Indian Railways">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =========================
+     FOOTER
+========================== -->
+<footer class="text-white pt-5 pb-0" style="background: linear-gradient(135deg, #0077b5, #005f8d);">
+  <div class="container">
+    <div class="row gy-4">
+      <!-- About -->
+      <div class="col-lg-4 col-md-6">
+        <h5 class="fw-bold mb-3">Kristronics</h5>
+        <p class="text-light opacity-75">
+          Empowering smart mobility through cutting-edge electronic and digital solutions for automotive and rail transport industries. 
+          We innovate to move the world forward.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-lg-2 col-md-6">
+        <h6 class="fw-semibold mb-3">Quick Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light text-decoration-none d-block mb-2">About Us</a></li>
+          <li><a href="./automative.html" class="text-light text-decoration-none d-block mb-2">Automotive Industry</a></li>
+          <li><a href="#" class="text-light text-decoration-none d-block mb-2">Rail Transport</a></li>
+          <li><a href="#" class="text-light text-decoration-none d-block mb-2">Solutions</a></li>
+          <li><a href="#" class="text-light text-decoration-none d-block">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-lg-3 col-md-6">
+        <h6 class="fw-semibold mb-3">Contact</h6>
+        <p class="mb-2"><i class="bi bi-geo-alt-fill me-2"></i> Plot No. 257 First Floor HSIIDC Industrial Estate Sonipat, Haryana-131029</p>
+        <p class="mb-2"><i class="bi bi-envelope-fill me-2"></i>kristronics.tech@gmail.com</p>
+        <p><i class="bi bi-telephone-fill me-2"></i> +91 98765 43210</p>
+      </div>
+
+      <!-- Social Media -->
+      <div class="col-lg-3 col-md-6">
+        <h6 class="fw-semibold mb-3">Follow Us</h6>
+        <div>
+          <a href="#" class="text-white fs-4 me-3"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="text-white fs-4 me-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white fs-4 me-3"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="text-white fs-4"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-light opacity-25 my-4">
+
+    <div class="pb-3">
+      <p class="mb-0 small opacity-75">© 2025 Kristronics. All Rights Reserved. | Designed with <i class="bi bi-lightning-fill text-warning"></i> by Kristronics Team</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="./assets/js/main.js"></script>
+<script>
+  AOS.init(); // Initialize Animations
+</script>
+
+</body>
+</html>
