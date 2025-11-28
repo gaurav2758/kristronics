@@ -100,7 +100,7 @@
 
     .solution-card img {
       width: 100%;
-      height: 230px;
+      height:300px;
       object-fit: cover;
       transition: transform 0.5s ease;
     }
@@ -115,7 +115,7 @@
     }
 
     .solution-card:hover img {
-      transform: scale(1.08);
+      transform: scale(1.02);
     }
 
     .solution-card:hover::after {
@@ -260,6 +260,21 @@
   color: #e8f6fd;
 }
 
+.hero-slider .slide {
+  opacity: 0;
+  transform: scale(1);
+  transition: opacity 0.8s ease-in-out, transform 2.5s ease-out;
+}
+
+.hero-slider .slide.active {
+  opacity: 1;
+}
+
+.hero-slider .slide.zoom {
+  transform: scale(1.08); /* Ken Burns zoom-in */
+}
+
+
 .btn-main {
   background: #00a6e0;
   color: white;
@@ -348,50 +363,79 @@
 }
 
 /* ------------------------------
-   NAVBAR DROPDOWN – HOVER + ANIMATION
+   NAVBAR DROPDOWN – PREMIUM ANIMATION
 ----------------------------------- */
 
+/* Dropdown container */
 .navbar-nav .dropdown-menu {
   opacity: 0;
   visibility: hidden;
-  transform: translateY(10px);
-  transition: all 0.25s ease-in-out;
-  border-radius: 12px;
+  transform: translateY(12px) scale(0.98);
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  border-radius: 14px;
   padding: 10px 0;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
   border: none;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(6px);
 }
 
 /* Show dropdown on hover */
 .nav-item.dropdown:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
-  transform: translateY(0px);
+  transform: translateY(0px) scale(1);
 }
 
-/* Menu links */
+/* Dropdown items */
 .dropdown-menu .dropdown-item {
-  padding: 10px 20px;
+  padding: 10px 22px;
   font-size: 15px;
-  transition: 0.2s;
+  position: relative;
+  transition: all 0.25s ease;
 }
 
-/* Hover effect for items */
+/* Highlight bar on hover */
+.dropdown-menu .dropdown-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  background: rgba(0, 119, 181, 0.08);
+  transition: width 0.25s ease;
+}
+
+.dropdown-menu .dropdown-item:hover::before {
+  width: 100%;
+}
+
 .dropdown-menu .dropdown-item:hover {
-  background: #0077b5;
-  color: #fff;
+  color: #0077b5;
+  padding-left: 26px;
 }
 
-/* Triangle indicator */
+
+/* ------------------------------
+   NAV LINK HOVER EFFECT (NO TRIANGLE)
+----------------------------------- */
+
 .nav-item.dropdown > .nav-link::after {
-  content: " ▾";
-  font-size: 13px;
-  transition: 0.2s;
+  content: "";
 }
 
-.nav-item.dropdown:hover > .nav-link::after {
-  transform: rotate(180deg);
+/* Text glow + lift */
+.nav-item.dropdown > .nav-link {
+  transition: 0.25s ease;
+  position: relative;
 }
+
+.nav-item.dropdown:hover > .nav-link {
+  color: #0077b5;
+  text-shadow: 0 0 6px rgba(0, 119, 181, 0.45);
+  transform: translateY(-2px);
+}
+
 
 .logo-slider {
   height: 150px;
@@ -498,6 +542,83 @@
   }
 }
 
+.lpslider {
+  width: 100%;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+}
 
+/* Slides */
+.lpslide {
+  position: absolute;
+  width: 100%;
+  max-height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
 
+.lpslide.active {
+  opacity: 1;
+}
 
+/* Images with Ken Burns */
+.lpslide img {
+  width: 100%;
+  max-height: 100%;
+  object-fit:cover;
+  animation: kenburns 10s ease-in-out infinite alternate;
+  border-radius: 16px;
+}
+
+@keyframes kenburns {
+  from { transform: scale(1); }
+  to   { transform: scale(1.01); }
+}
+
+/* Arrows */
+.lparrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  padding: 10px 16px;
+  background: rgba(0,0,0,0.35);
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  transition: 0.3s;
+}
+
+.lparrow:hover { background: rgba(0,0,0,0.55); }
+
+.prev { left: 15px; }
+.next { right: 15px; }
+
+/* Dots */
+.lpdots {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 11;
+}
+
+.lpdot {
+  width: 12px;
+  height: 12px;
+  background: rgba(255,255,255,0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.lpdot.active {
+  background: #0077b5;
+  width: 26px;
+  border-radius: 12px;
+}
